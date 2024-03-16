@@ -14,59 +14,41 @@
     {% endif %}
     <meta charset="UTF-8">
     {% seo %}
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="description" content="Dyaus Investments">
-    <meta name="robots" content="index, follow">
+    <meta name=”robots” content=”index, follow”>
+    <!-- <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>
-        /* Hamburger menu styles */
-        .nav-toggle {
-            display: none; /* Hide by default */
-        }
-        .nav-toggle:checked + .nav-menu {
-            display: block; /* Show when checked */
-        }
-        .nav-menu {
-            display: flex; /* Display menu items in a line */
-            list-style-type: none; /* Remove bullet points */
+        nav ul {
+            list-style-type: none;
             padding: 0;
         }
-        .nav-menu li {
-            margin-right: 20px; /* Adjust spacing between menu items */
-        }
-        @media screen and (max-width: 768px) {
-            .nav-menu {
-                display: none; /* Hide menu on small screens */
-            }
-            .nav-toggle {
-                display: block; /* Show hamburger menu on small screens */
-            }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
-<nav>
-    <ul>
-        <li><span id="website-name" style="font-family: optima, sans-serif; font-size: 32px;"><strong>Dyaus Investments</strong></span></li>
-    </ul>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle"> <!-- Hamburger menu toggle -->
-    <label for="nav-toggle" class="nav-toggle-label">&#9776;</label> <!-- Hamburger menu icon -->
-    <ul class="nav-menu">
-        <li><a href="/product">Product</a></li>
-        <li><a href="/research">Research</a></li>
-        <li><a href="/team">Team</a></li>
-    </ul>
-</nav>
-<div class="container">
-
-{{ content }}
-
-</div>
+    <nav>
+        <ul>
+            <li><span style="font-family: optima, sans-serif; font-size: 32px;"><strong>Dyaus Investments</strong></span></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/research">Research</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        {{ content }}
+    </div>
 </body>
 </html>
+
 
