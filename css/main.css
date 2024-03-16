@@ -54,6 +54,7 @@ nav ul li, footer ul li {
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     display: inline;
     margin-right: 20px;
+    margin-top: 20px;
     color: white;
     font-size: 19px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20.9px;
 }
